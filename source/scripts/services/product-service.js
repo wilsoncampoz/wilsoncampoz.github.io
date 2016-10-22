@@ -3,7 +3,7 @@
     angular.module('ProductApp').service('ProductService', ['$http', '$timeout', '$q', 'ProductFactory', Service]);
 
     function Service($http, $timeout, $q, ProductFactory) {
-        const endpoint = "/api/products/";
+        const endpoint = "public/api/products/";
 
         this.getProduct = function (id) {
             var defer = $q.defer();
