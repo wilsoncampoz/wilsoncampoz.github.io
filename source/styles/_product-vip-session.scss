@@ -1,0 +1,21 @@
+@import '_settings';
+
+.product-vip-session {
+
+    .image-container {
+        padding-right: $default-spacing;
+        float: left;
+        margin-bottom: $default-spacing;
+
+        .main-image {
+            width: 100%;
+            border: 1px solid $default-gray;
+        }
+    }
+
+    &:after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+}

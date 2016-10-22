@@ -1,0 +1,11 @@
+@import '_settings';
+
+input, select {
+    height: 25px;
+    border: 1px solid $default-gray;
+    width: 100%;
+}
+
+p {
+    margin: $minor-spacing 0;
+}

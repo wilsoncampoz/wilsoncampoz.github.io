@@ -1,0 +1,67 @@
+@import '_settings';
+
+.tabs {
+    position: relative;   
+    min-height: 200px; 
+    clear: both;
+}
+
+.tab-item label {
+    padding: 5px $default-spacing;
+    float: left;
+    border: 1px solid $default-gray;
+    border-radius: 3px 3px 0 0;
+    background: $default-gray;
+    cursor: pointer;
+}
+
+.tab-item [type=radio] {
+    display: none;   
+}
+
+.content {
+    position: absolute;
+    top: 29px;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    padding: $default-spacing;
+    border: 1px solid $default-gray;
+    background: white; 
+
+    .questions {
+
+        .person {
+            font-weight: bold;
+            font-size: 13px;
+
+            &.blue { color: $dark-blue; }
+            &.green { color: $dark-green }
+        }
+
+        .text-info {
+            padding: $minor-spacing $big-spacing;
+
+            &.blue { 
+                color: $dark-blue; 
+                background-color: $light-blue; 
+            }
+
+            &.green { 
+                color: $dark-green; 
+                background-color: $light-green 
+            }
+        }
+    }
+}
+
+[type=radio]:checked ~ label {
+    background: white;
+    border-bottom: 1px solid white;
+    position: relative;
+    z-index: 2;
+}
+
+[type=radio]:checked ~ label ~ .content {
+    z-index: 1;
+}

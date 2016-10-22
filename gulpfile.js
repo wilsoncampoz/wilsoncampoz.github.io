@@ -27,7 +27,8 @@ gulp.task('clean', function() {
 
 gulp.task('copy', function() {
   // copy any html files in source/ to public/
-  gulp.src('source/*.html').pipe(gulp.dest('public'));
+  gulp.src('source/**/*.html').pipe(gulp.dest('public'));
+  gulp.src('source/api/**/*.*').pipe(gulp.dest('public/api'));
   gulp.src('node_modules/chico/dist/assets/*.*').pipe(gulp.dest('public/assets/assets'));
 });
 
@@ -56,7 +57,12 @@ gulp.task('build-js', function() {
       'node_modules/tiny.js/dist/tiny.js',
       'node_modules/chico/dist/ui/chico.js',
       'node_modules/jquery/dist/jquery.min.js',
-      'source/scripts/**/*.js'
+      'node_modules/angular/angular.js',
+      'node_modules/angular-ui-router/release/angular-ui-router.min.js',
+      // App
+      'source/scripts/product-app.js',
+      'source/scripts/**/*.js',
+      'source/scripts/main.js'
     ])
     .pipe(sourcemaps.init())
     .pipe(concat('main.min.js'))
@@ -70,5 +76,5 @@ gulp.task('build-js', function() {
 gulp.task('watch', ['browserSync'], function() {
   gulp.watch('source/scripts/**/*.js', ['jshint', 'build-js', browserSync.reload]);
   gulp.watch('source/styles/**/*.scss', ['build-css', browserSync.reload]);
-  gulp.watch('source/*.html', ['copy', browserSync.reload]);
+  gulp.watch(['source/**/*.html', 'source/api/**/*.*'], ['copy', browserSync.reload]);
 });

@@ -4,9 +4,16 @@
   "description": "This is the Product Page Demo repository",
   "main": "index.js",
   "dependencies": {
+    "angular-ui-router": "^0.3.1",
     "gulp": "^3.9.1"
   },
   "devDependencies": {
+    "angular": "^1.5.8",
+    "angular-route": "~1.4.0",
+    "angular-sanitize": "^1.5.5",
+    "angular-cookies": "^1.5.7",
+    "ng-currency": "^0.10.1",
+    "grunt-angular-templates": "^0.5.7",
     "browser-sync": "^2.17.5",
     "chico": "^2.0.9",
     "del": "^2.2.2",

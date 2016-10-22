@@ -1,4 +1,8 @@
 @import '_settings';
+@import '_base';
+@import '_product-vip-session';
+@import '_related-products';
+@import '_tabs';
 
 body {
     padding: $medium-spacing;
@@ -19,7 +23,8 @@ body {
             color: $price;
             
             &.main {
-                font-size: 25px;
+                font-weight: bold;
+                font-size: 28px;
                 line-height: 20px;
                 margin-bottom: $medium-spacing;
             }
@@ -34,57 +39,9 @@ body {
         }
     }
 
-    &-content {
-        margin-bottom: $big-spacing;
-
-        .image-container {
-            padding-right: $default-spacing;
-            float: left;
-
-            .main-image {
-                width: 100%;
-                height: 320px;
-                border: 1px solid $default-gray;
-            }
-        }
-
-        &:after {
-            content: "";
-            display: block;
-            clear: both;
-        }
-    }
-
     &-price-container {
         padding-left: $default-spacing;
         float: left;
-
-        .related-products {
-            margin-top: $big-spacing;
-
-            h3 {
-                margin: 0 0 $minor-spacing;
-            }
-
-            .related-item {
-                width: 40px;
-                padding: 0 $default-spacing;
-                float: left;
-
-                img {
-                    margin-bottom: $default-spacing;
-                }
-
-                h4 {
-                    margin: 0;
-                }
-            }
-
-            .ch-carousel-disabled {
-                display: block;
-                opacity: 0.5;
-            }
-        }
 
         .observation {
             margin-top: $default-spacing;
@@ -93,77 +50,7 @@ body {
 
     &-info {
         margin-top: $big-spacing;
-
-        /// Tabs
-
-        .tabs {
-            position: relative;   
-            min-height: 200px; 
-            clear: both;
-        }
-
-        .tab-item label {
-            padding: 5px $default-spacing;
-            float: left;
-            border: 1px solid $default-gray;
-            border-radius: 3px 3px 0 0;
-            background: $default-gray;
-            cursor: pointer;
-        }
-
-        .tab-item [type=radio] {
-            display: none;   
-        }
-
-        .content {
-            position: absolute;
-            top: 29px;
-            width: 100%;
-            left: 0;
-            bottom: 0;
-            padding: $default-spacing;
-            border: 1px solid $default-gray;
-            background: white; 
-
-            .questions {
-
-                .person {
-                    font-weight: bold;
-                    font-size: 13px;
-
-                    &.blue { color: #3D548A }
-                    &.green { color: #176326 }
-                }
-
-                .text-info {
-                    padding: $minor-spacing $big-spacing;
-
-                    &.blue { 
-                        color: #3D548A; 
-                        background-color: #90C3D4 
-                    }
-                    
-                    &.green { 
-                        color: #176326; 
-                        background-color: #A1D490 
-                    }
-                }
-            }
-        }
-
-        [type=radio]:checked ~ label {
-            background: white;
-            border-bottom: 1px solid white;
-            position: relative;
-            z-index: 2;
-        }
-
-        [type=radio]:checked ~ label ~ .content {
-            z-index: 1;
-        }
-
     }
-
 
 }
 
