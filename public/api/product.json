@@ -1,0 +1,49 @@
+{
+  "title": "Ipad Mini Apple 16 Gb Wifi Led 7.9",
+  "images": [],
+  "price": 4799.99,
+  "currency": "$",
+  "availableQuantity": 4,
+  "installments": 12,
+  "description": "Product description",
+  "questions": [{
+    "userName": "Guest",
+    "question": "Hey, I have a question for you",
+    "answer": "This is my final answer" 
+  },{
+    "userName": "Wilson",
+    "description": "Hey, I have a question for you",
+    "answer": "This is my final answer" 
+  }],
+  "relatedProducts": [{
+    "title": "Ipad Mini Apple 12 Gb Wifi Led 5.0",
+    "price": 4500.00,
+    "installments": 10,
+    "url": "http://some-other-product"
+  },{
+    "title": "Ipod nano",
+    "price": 4500.00,
+    "installments": 10,
+    "url": "http://some-other-product"
+  },{
+    "title": "Iphone 3GS",
+    "price": 4500.00,
+    "installments": 10,
+    "url": "http://some-other-product"
+  },{
+    "title": "Iphone 4S",
+    "price": 4500.00,
+    "installments": 10,
+    "url": "http://some-other-product"
+  },{
+    "title": "Macbook",
+    "price": 4500.00,
+    "installments": 10,
+    "url": "http://some-other-product"
+  },{
+    "title": "Macbook Pro Retina 13",
+    "price": 4500.00,
+    "installments": 10,
+    "url": "http://some-other-product"
+  }] 
+}
