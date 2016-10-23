@@ -1,6 +1,7 @@
-(function () {
+;(function () {
+    'use strict';
 
-    angular.module('ProductApp').factory('ProductFactory', ProductFactory);
+    angular.module('ProductApp').factory('ProductFactory', [ProductFactory]);
 
     function Product(product) {
         Object.keys(product).forEach(key => {
@@ -15,7 +16,8 @@
     Product.prototype.getData = function () {
         return {
             quantity: this.selectedQuantity,
-            installment: this.selectedInstallment,
+            installments: this.selectedInstallment,
+            installmentValue: (this.price * this.selectedQuantity) / this.selectedInstallment,
             price: this.price
         }
     };

@@ -26,7 +26,7 @@ body {
                 font-weight: bold;
                 font-size: 28px;
                 line-height: 20px;
-                margin-bottom: $medium-spacing;
+                margin-bottom: $big-spacing;
             }
         }
     }
@@ -35,7 +35,11 @@ body {
         margin-bottom: $medium-spacing;
 
         > label {
-            margin-bottom: $medium-spacing;
+            margin-bottom: $default-spacing;
+        }
+
+        select {
+            margin-left: $default-spacing;
         }
     }
 

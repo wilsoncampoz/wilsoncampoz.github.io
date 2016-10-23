@@ -2,7 +2,7 @@
 
 .tabs {
     position: relative;   
-    min-height: 200px; 
+    min-height: 260px; 
     clear: both;
 }
 
@@ -20,6 +20,7 @@
 }
 
 .content {
+    display: none;
     position: absolute;
     top: 29px;
     width: 100%;
@@ -30,6 +31,8 @@
     background: white; 
 
     .questions {
+        max-height: 210px;
+        overflow-y: scroll;
 
         .person {
             font-weight: bold;
@@ -63,5 +66,5 @@
 }
 
 [type=radio]:checked ~ label ~ .content {
-    z-index: 1;
+    display: block;
 }

@@ -1,4 +1,6 @@
-(function () {
+;(function () {
+    'use strict';
+
     angular.module('ProductApp').directive('simpleCarousel', ['$timeout', function ($timeout) {
         return {
             restrict: "A",

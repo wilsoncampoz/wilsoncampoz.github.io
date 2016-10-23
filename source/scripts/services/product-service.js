@@ -1,4 +1,5 @@
-(function () {
+;(function () {
+    'use strict';
 
     angular.module('ProductApp').service('ProductService', ['$http', '$timeout', '$q', 'ProductFactory', Service]);
 

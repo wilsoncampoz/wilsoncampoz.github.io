@@ -1,10 +1,10 @@
 {
     "product": {
-        "id": 2,
-        "title": "Macbook Pro Retina",
-        "images": [],
+        "id": 1,
+        "title": "Macbook",
+        "images": ["https://http2.mlstatic.com/apple-macbook-pro-retina-13-i5-27ghz-8gb-128ssd-mf839-capa-D_NQ_NP_141501-MLB20329231975_062015-O.webp"],
         "price": 4799.99,
-        "currency": "$",
+        "currency": "R$",
         "availableQuantity": 4,
         "installments": 12,
         "description": "Product description",
@@ -16,46 +16,52 @@
             },
             {
                 "userName": "Wilson",
-                "description": "Hey, I have a question for you",
-                "answer": "This is my final answer"
+                "question": "Do you have this onw in white ?",
+                "answer": "No, only have in black"
             }
         ],
         "relatedProducts": [
             {
-                "title": "Ipad Mini Apple 12 Gb Wifi Led 5.0",
-                "price": 4500.00,
-                "installments": 10,
-                "url": "http://some-other-product"
+                "id": 2,
+                "title": "Macbook Pro Apple Intel Core I7 16gb",
+                "image": "http://img1.mlstatic.com/jm/img?v=F&f=mlinks/product_ads/MLB/212980346/75231665.1477159772066",
+                "currency": "R$",
+                "price": 12.927
             },
             {
-                "title": "Ipod nano",
-                "price": 4500.00,
-                "installments": 10,
-                "url": "http://some-other-product"
+                "id": 1,
+                "title": "Tela Touch Apple Ipad 2 Touch Preto E...",
+                "image": "https://http2.mlstatic.com/S_836621-MLB20804318379_072016-G.jpg",
+                "currency": "R$",
+                "price": 59.99
             },
             {
-                "title": "Iphone 3GS",
-                "price": 4500.00,
-                "installments": 10,
-                "url": "http://some-other-product"
+                "id": 2,
+                "title": "Ipad Mini Wifi Bom 16gb Preto Bom Estado Garantia  Nf",
+                "image": "https://http2.mlstatic.com/S_21021-MLB20203644048_112014-G.jpg",
+                "currency": "R$",
+                "price": 960.00
             },
             {
-                "title": "Iphone 4S",
-                "price": 4500.00,
-                "installments": 10,
-                "url": "http://some-other-product"
+                "id": 1,
+                "title": "Capa Case Kit Apple Ipad 2 3 4 Smart Cover+traseira + Brinde",
+                "image": "https://http2.mlstatic.com/S_179405-MLB25014217074_082016-G.jpg",
+                "currency": "R$",
+                "price": 33.90
             },
             {
-                "title": "Macbook",
-                "price": 4500.00,
-                "installments": 10,
-                "url": "http://some-other-product"
+                "id": 2,
+                "title": "Capa Case Couro Ipad 2 3 4 Retina Luxo 360 + Pelicula+caneta",
+                "image": "https://http2.mlstatic.com/S_700301-MLB20291183802_042015-G.jpg",
+                "currency": "R$",
+                "price": 40.50
             },
             {
-                "title": "Macbook Pro Retina 13",
-                "price": 4500.00,
-                "installments": 10,
-                "url": "http://some-other-product"
+                "id": 1,
+                "title": "Parafusadeira/furad. Elétrica 3/8",
+                "image": "http://mlb-d1-p.mlstatic.com/188811-MLB20652442988_032016-T.webp",
+                "currency": "R$",
+                "price": 194.95
             }
         ]
     }
